@@ -10,7 +10,7 @@ import java.util.Collections;
  * @author Chandrashekar Akkenapally
  *
  */
-public class TimeLimitedIterativeDeepeningDepthLimitedMiniMaxAlphaBetaPruningQuiescentSearchMoveOrdering {
+public class TLIDDLMMABQSMO {
 	
 //	public static int TOTAL_TIME_AVAILABLE_IN_MILLISECS = 15 * 60 * 1000;
 //	public static int TOTAL_MOVES = 40;

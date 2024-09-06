@@ -92,8 +92,9 @@ public class AI extends BaseAI {
         // Put your game logic here for makeMove
 
     	String move="";
-    	TimeLimitedIterativeDeepeningDepthLimitedMiniMaxAlphaBetaPruningQuiescentSearchMoveOrdering TLIDDLMMABQSMO=new TimeLimitedIterativeDeepeningDepthLimitedMiniMaxAlphaBetaPruningQuiescentSearchMoveOrdering();
-		move=TLIDDLMMABQSMO.getBestMoveByTimeLimitedIterativeDeepeningDepthLimitedMiniMaxAlphaBetaPruningQuiescentSearchMoveOrdering(this.game.fen , (this.player.timeRemaining/1000000));
+    	TLIDDLMMABQSMO timeLimitedIterativeDeepeningDepthLimitedMiniMaxAlphaBetaPruningQuiescentSearchMoveOrdering =new TLIDDLMMABQSMO();
+		move=timeLimitedIterativeDeepeningDepthLimitedMiniMaxAlphaBetaPruningQuiescentSearchMoveOrdering
+                .getBestMoveByTimeLimitedIterativeDeepeningDepthLimitedMiniMaxAlphaBetaPruningQuiescentSearchMoveOrdering(this.game.fen , (this.player.timeRemaining/1000000));
 
         return move;
         // <<-- /Creer-Merge: makeMove -->>
